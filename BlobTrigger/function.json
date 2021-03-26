@@ -1,0 +1,19 @@
+{
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "type": "eventHub",
+      "name": "$return",
+      "eventHubName": "splunkeventhubfunctionseventhub",
+      "connection": "MyEventHubSendAppSetting",
+      "direction": "out"
+    },
+    {
+      "type": "blobTrigger",
+      "direction": "in",
+      "name": "myblob",
+      "path": "test/{name}",
+      "connection": "splkmscs_STORAGE"
+    }
+  ]
+}
