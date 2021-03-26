@@ -1,0 +1,1 @@
+[![Deploy to Azure](https://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fgithub.com%2Fani0989%2FBlobTriggerFunction%2Fblob%2Fmaster%2Fdeploy%2Fdeployazure.json)
