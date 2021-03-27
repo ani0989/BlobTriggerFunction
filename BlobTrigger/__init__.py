@@ -10,4 +10,4 @@ def main(myblob: func.InputStream):
                  f"Blob Size: {myblob.length} bytes\n"
                  f"Blob Content: {myblob.read()}"
                  )
-    return 'Message created at: {}'.format(timestamp)
+    return '{}'.format(myblob.read())

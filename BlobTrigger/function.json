@@ -12,8 +12,8 @@
       "type": "blobTrigger",
       "direction": "in",
       "name": "myblob",
-      "path": "test/{name}",
-      "connection": "splkmscs_STORAGE"
+      "path": "CONTAINER_NAME/{name}",
+      "connection": "AzureWebJobsStorage"
     }
   ]
 }
