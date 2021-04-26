@@ -1,10 +1,9 @@
 {
-  "scriptFile": "__init__.py",
   "bindings": [
     {
       "type": "eventHub",
       "name": "$return",
-      "eventHubName": "splunkeventhubfunctionseventhub",
+      "eventHubName": "%eventHubName%",
       "connection": "MyEventHubSendAppSetting",
       "direction": "out"
     },
@@ -12,7 +11,7 @@
       "type": "blobTrigger",
       "direction": "in",
       "name": "myblob",
-      "path": "CONTAINER_NAME/{name}",
+      "path": "%pathName%",
       "connection": "AzureWebJobsStorage"
     }
   ]
